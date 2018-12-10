@@ -6,15 +6,16 @@
 package calculadora_rmi.calc;
 
 import java.rmi.Remote;
+import java.rmi.RemoteException;
 
 /**
  *
  * @  author HelmutColin
  */
 public interface calcInterface extends Remote {
-    public int suma(int x, int y);
-    public int res(int x, int y);
-    public int mult(int x, int y);
-    public int div(int x, int y);
-    public int pot(int x, int y);
+    public int suma(int x, int y)throws RemoteException;   
+    public int res(int x, int y)throws RemoteException;
+    public int mult(int x, int y)throws RemoteException;
+    public int div(int x, int y)throws RemoteException;
+    public int pot(int x, int y)throws RemoteException;
 }
